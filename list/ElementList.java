@@ -24,6 +24,7 @@ public class ElementList<T> extends AbstractList<T> {
         return new ElementList<>(element, this);
     }
 
+    @Override
     public int Size() {
         return (1 + tail.Size());
     }
